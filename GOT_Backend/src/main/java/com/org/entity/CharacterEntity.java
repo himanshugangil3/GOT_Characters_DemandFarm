@@ -75,23 +75,9 @@ public class CharacterEntity {
     @JoinColumn(name = "character_id")
     private List<ActorEntity> actors;
 
-	
-    
-    
-
+	   // Constructors, getters, setters
 
 	
-	
-	
-	
-
-	
-
-	
-
-
-	
-
 	public CharacterEntity(Long id, String characterName, String houseName, String characterImageThumb,
 			String characterImageFull, String characterLink, String actorName, String actorLink, String nickname,
 			Boolean royal, Boolean kingsguard, Boolean isFavourite, List<String> guardianOf, List<String> siblings,
@@ -352,5 +338,5 @@ public class CharacterEntity {
 	
 
     
-    // Constructors, getters, setters
+ 
 }
