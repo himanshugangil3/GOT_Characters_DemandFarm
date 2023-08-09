@@ -39,6 +39,7 @@ public class FmsSpringBootBackendApplication {
 	    @PostConstruct
 	    public void persistCharactersFromJson() {
 	        try {
+			// add the path of json file (i.e. ch.json)
 	            List<CharacterEntity> characters = characterService.readCharactersFromJson("D:\\ch.json");
 	            characterController.persistCharacters(characters);
 	        } catch (IOException e) {
