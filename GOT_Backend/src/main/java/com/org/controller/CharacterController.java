@@ -33,12 +33,14 @@ public class CharacterController {
     @Autowired
     private  CharacterService characterService;
 
-    @CrossOrigin(origins = "*")
-    @PostMapping("/persist-characters")
-    public ResponseEntity<String> persistCharacters(@RequestBody List<com.org.entity.CharacterEntity> characters) {
-        characterRepository.saveAll(characters);
-        return ResponseEntity.ok("Characters persisted successfully!");
-    }
+
+	
+    // @CrossOrigin(origins = "*")
+    // @PostMapping("/persist-characters")
+    // public ResponseEntity<String> persistCharacters(@RequestBody List<com.org.entity.CharacterEntity> characters) {
+    //     characterRepository.saveAll(characters);
+    //     return ResponseEntity.ok("Characters persisted successfully!");
+    // }
     
     
  // Endpoint to get a list of all unique house names
