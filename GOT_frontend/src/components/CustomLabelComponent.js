@@ -1,7 +1,7 @@
 const CustomLabelComponent = ({ nodeData }) => {
     return (
       <text
-        x={10} // Adjust the horizontal position of the label
+        x={10} //
         dy=".31em"
         fontSize={12}
         fill="black"
