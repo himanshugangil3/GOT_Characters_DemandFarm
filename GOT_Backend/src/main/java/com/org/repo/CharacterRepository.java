@@ -12,7 +12,8 @@ import com.org.entity.CharacterEntity;
 
 @Repository
 public interface CharacterRepository extends JpaRepository<CharacterEntity, Long> {
-    // Add custom query methods if needed
+   
+	//  custom query methods 
 	
 	@Query("SELECT DISTINCT c.houseName FROM CharacterEntity c WHERE c.houseName IS NOT NULL")
     List<String> findAllUniqueHouseNames();
