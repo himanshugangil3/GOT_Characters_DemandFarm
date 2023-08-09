@@ -183,7 +183,7 @@ const handleSelectCharacter = (character) => {
       updatedCharacter.isFavourite = !updatedCharacter.isFavourite;
       setSelectedCharacter(updatedCharacter);
       
-      axios.put(`http://localhost:8081/api/characters/${characterId}/favourite`) // Replace with your API endpoint
+      axios.put(`http://localhost:8081/api/characters/${characterId}/favourite`) //  API endpoint
         .catch(error => {
           console.error('Error toggling favorite:', error);
         });
