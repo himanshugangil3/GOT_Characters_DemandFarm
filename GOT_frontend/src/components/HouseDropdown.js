@@ -6,7 +6,7 @@ function HouseDropdown({ onSelectHouse }) {
   const [houseNames, setHouseNames] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8081/api/characters/houses') // Replace with your API endpoint
+    axios.get('http://localhost:8081/api/characters/houses') // API endpoint
       .then(response => {
         setHouseNames(response.data);
       })
