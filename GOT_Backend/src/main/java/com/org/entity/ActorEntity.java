@@ -28,9 +28,11 @@ public class ActorEntity {
 	    @CollectionTable(name = "actor_seasons_active", joinColumns = @JoinColumn(name = "actor_id"))
 	    private List<Integer> seasonsActive;
 
-	    // Getters and setters
+	    // Getters and setters and constructors
+
+	
     public ActorEntity() {
-    }
+    		}
 
 	public ActorEntity(String actorName, String actorLink, List<Integer> seasonsActive) {
 		super();
