@@ -3,13 +3,14 @@ import React from 'react';
 import Tree from 'react-d3-tree';
 
 function FamilyTree({ treeData, onSelectCharacter }) {
-    console.log("tre data from child :::",treeData);
+
+    console.log("tree data from child :::",treeData);
     const renderForeignObjectNode = ({ nodeDatum }) => (
         <foreignObject x={-70} y={-10} width={140} height={20}>
           <div
             style={{
               textAlign: 'center',
-              border: '1px solid red', // Temporary style for debugging
+              border: '1px solid red',
             }}
             onClick={() => onSelectCharacter(nodeDatum.attributes)}
           >
@@ -34,7 +35,7 @@ function FamilyTree({ treeData, onSelectCharacter }) {
         translate={{ x: 300, y: 50 }}
         // onClick={onClickNode}
         onNodeClick={onClickNode}
-        // onRightClick={onClickNode} // Listen for right-click
+     
         nodeSvgShape={{
           shape: 'circle',
         }}
