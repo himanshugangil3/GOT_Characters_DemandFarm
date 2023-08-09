@@ -46,7 +46,7 @@ public class CharacterService {
 //            character.setIsFavourite(true);
 //            characterRepository.save(character);
 //        } else {
-//            // Handle not found error
+//           
 //            throw new Exception("Character not found with ID: " + id);
 //        }
 //    }
@@ -62,7 +62,7 @@ public class CharacterService {
         }
         character.setIsFavourite(!isFavourite);
 
-        // If the character has the same name, mark them as favorite too
+        
         List<CharacterEntity> charactersWithSameName = characterRepository.findByCharacterName(character.getCharacterName());
         for (CharacterEntity sameNameCharacter : charactersWithSameName) {
             sameNameCharacter.setIsFavourite(!isFavourite);
